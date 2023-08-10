@@ -1,17 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Gus Cyber Blog Is Here to Stay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
 </head>
-
 <body>
-  <main>
-    <h1> My First Blog </h1>
-  </main>
-</body>
 
+<div class="header">
+  <h2>Gus Cyber Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>DATA BREACH</h2>
+      <h5>Why Transparency After a Data Breach is Important, August 10, 2023</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>It’s one of the scariest outcomes of a cyber attack. A data breach’s effect can easily bankrupt a company, and even if appropriately handled, its consequences are often felt for months or years to come.</p>
+      <p> One of the biggest issues with data breaches, and what is often the most damaging outcome, is the loss of trust from customers. After all, if a breach happened once, how do you know it won’t happen again? </p>
+    </div>
+    <div class="card">
+      <h2>DATA BREACH</h2>
+      <h5>What Is a Data Breach?</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>A data breach is a cyber security incident where criminals, hackers, or disgruntled ex-employees gain unauthorized access to sensitive company data such as trade secrets, internal communications, customer login information, or personal information of clients.</p>
+      <p>The goal of such an attack is to sell the information on the dark web for a profit, use stolen trade secrets to ransom the target company, or cause a company’s stock to fall due to the results of the breach.</p>
+      <p>For many IT professionals, a data breach is a serious blemish on their record and often a cause of shame or outright firing. However, the most common reason these attacks go unreported is less on the IT team and more on the executive team.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Augustine T Paye, An an experienced cyber security Engineer with over 10 years in providing service and has the ability to develop technical solutions that require collaboration with internal experts, deep analyses and understanding of impact on end-product/solution. Also has the Capability to develop solutions to technical problems and issues that are unclear and require deep technical knowledge.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
 </html>
